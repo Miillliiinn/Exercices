@@ -1,0 +1,17 @@
+Tu travailles sur une application de gestion pour une boutique. Tu dois afficher le nom du vendeur qui a généré le plus de chiffre d'affaires.
+
+Tes contraintes :
+
+    Tu dois récupérer les Vendeurs (users) via un fetch.
+
+    Tu dois récupérer les Ventes (sales) via un autre fetch.
+
+    Tu dois calculer le total des ventes par vendeur.
+
+    Tu dois retourner une phrase : "Le meilleur vendeur est [Nom] avec un total de [Montant]€".
+
+URLs fictives pour ton code :
+
+    https://api.boutique.com/users → Retourne [{ id: 1, name: "Thomas" }, { id: 2, name: "Julie" }]
+
+    https://api.boutique.com/sales → Retourne [{ userId: 1, amount: 50 }, { userId: 2, amount: 100 }, { userId: 1, amount: 20 }]
