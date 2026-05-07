@@ -1,0 +1,31 @@
+L'énoncé : "Le Nettoyeur de Base de Données"
+
+Tu reçois un tableau de noms d'utilisateurs tels qu'ils ont été saisis dans un formulaire (avec des erreurs de frappe, des espaces en trop, etc.).
+
+Objectif : Écris une fonction cleanUsers(users) qui :
+
+    Supprime les espaces inutiles au début et à la fin.
+
+    Met la première lettre en majuscule et le reste en minuscule.
+
+    Supprime les doublons (si "Thomas" apparaît deux fois après nettoyage).
+
+    Retourne le tableau trié par ordre alphabétique.
+
+JavaScript
+
+const rawUsers = [" thomas ", "JULIE", " thomas", "  bob  ", "julie "];
+
+Résultat attendu : ["Bob", "Julie", "Thomas"]
+
+Tes outils JS pour réussir :
+
+    .trim() : Pour enlever les espaces autour d'un mot.
+
+    .toLowerCase() et .toUpperCase() : Pour gérer la casse.
+
+    String.charAt(0) et String.slice(1) : Pour cibler la première lettre et le reste du mot.
+
+    new Set() : Le moyen le plus rapide de supprimer les doublons.
+
+    .sort() : Pour le tri final.
