@@ -1,0 +1,16 @@
+1. Le croisement de données (Type "Portfolio")
+
+Énoncé : Tu as une liste d'utilisateurs et une liste de commandes.
+Affiche le montant total dépensé par chaque utilisateur.
+
+const users = [
+  { id: 1, name: "Thomas" },
+  { id: 2, name: "Julie" }
+];
+const orders = [
+  { userId: 1, amount: 50 },
+  { userId: 1, amount: 20 },
+  { userId: 2, amount: 100 }
+];
+
+Résultat attendu : { "Thomas": 70, "Julie": 100 }
