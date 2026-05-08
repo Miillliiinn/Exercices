@@ -1,0 +1,15 @@
+Énoncé :
+Tu reçois une chaîne contenant uniquement les caractères '(' ')', '{' '}', et '[' ']'.
+Tu dois déterminer si la chaîne est valide. Une chaîne est valide si :
+
+    Les parenthèses ouvertes sont fermées par le même type de parenthèses.
+
+    Les parenthèses ouvertes sont fermées dans le bon ordre.
+
+Exemples :
+
+    s = "()[]{}" -> true
+
+    s = "([)]" -> false
+
+    s = "{[]}" -> true

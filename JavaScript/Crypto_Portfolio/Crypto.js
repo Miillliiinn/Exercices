@@ -27,5 +27,5 @@ async function getTotalValue()
             totalValue += value.price * u.quantity;
         }
     });
-    console.log(totalValue);
+    console.log(`La valeur totale de votre portefeuille est de ${totalValue}$`.);
 };
