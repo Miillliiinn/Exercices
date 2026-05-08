@@ -1,0 +1,18 @@
+L'énoncé : "L'Analyste de Crypto-Portefeuille"
+Tu dois aider un utilisateur à voir la valeur totale de ses actifs.
+Données à récupérer :
+
+Le Portefeuille (wallet) : 
+Un tableau d'objets contenant les quantités possédées.URL : 
+https://api.crypto.com/my-walletFormat : [{ coin: "BTC", quantity: 0.5 }, { coin: "ETH", quantity: 2.0 }]
+
+Les Prix (prices) : 
+Un tableau d'objets contenant le prix actuel de chaque monnaie.URL : 
+https://api.crypto.com/pricesFormat : [{ coin: "BTC", price: 60000 }, { coin: "ETH", price: 3000 }, { coin: "DOGE", price: 0.1 }]
+
+Ton objectif :
+Écris une fonction async getTotalValue() qui :
+Récupère les deux sources de données en parallèle.
+Calcule la valeur totale du portefeuille ($Quantité \times Prix$).
+Retourne la phrase : "La valeur totale de votre portefeuille est de [Total]$".
+Contrainte Bonus : Si une monnaie dans le portefeuille n'a pas de prix correspondant dans l'API des prix, ignore-la simplement sans faire planter le code.
