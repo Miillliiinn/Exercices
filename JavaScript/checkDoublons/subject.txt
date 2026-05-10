@@ -1,0 +1,10 @@
+Doublons dans un tableau.
+
+Énoncé :
+Écris une fonction qui prend un tableau d'entiers et retourne true si un nombre apparaît au moins deux fois, et false si tous les éléments sont distincts.
+
+Exemple :
+
+[1, 2, 3, 1] -> true
+
+[1, 2, 3, 4] -> false
