@@ -1,0 +1,12 @@
+Le "Maximum Profit" (Achat/Vente d'actions)
+
+Énoncé :
+Tu as un tableau prices où prices[i] est le prix d'une action le jour i.
+Tu dois choisir un jour pour acheter et un jour différent dans le futur pour vendre afin de maximiser ton profit.
+Si aucun profit n'est possible, retourne 0.
+
+Exemple :
+
+prices = [7, 1, 5, 3, 6, 4]
+
+Résultat : 5 (Achat à 1, vente à 6). Note : On ne peut pas acheter à 1 et vendre à 7 car le 7 est dans le passé.
