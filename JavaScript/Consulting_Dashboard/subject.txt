@@ -1,0 +1,30 @@
+L'énoncé : "Le Dashboard des Consultants"
+Tu reçois deux sources de données :
+
+Un tableau de Consultants (avec leur nom et l'ID de leur entreprise).
+
+Un tableau d'Entreprises (avec leur ID et leur nom).
+
+Objectif : Créer une fonction getConsultantsByCompany qui retourne un objet où la clé est le nom de l'entreprise et la valeur est un tableau des noms des consultants qui y travaillent.
+
+Les données :
+
+const companies = [
+  { id: "c1", name: "Google" },
+  { id: "c2", name: "Galadrim" },
+  { id: "c3", name: "Amazon" }
+];
+
+const consultants = [
+  { name: "Thomas", companyId: "c2" },
+  { name: "Julie", companyId: "c1" },
+  { name: "Antoine", companyId: "c2" },
+  { name: "Sarah", companyId: "c3" }
+];
+
+Ce qui est attendu:
+{
+  "Google": ["Julie"],
+  "Galadrim": ["Thomas", "Antoine"],
+  "Amazon": ["Sarah"]
+}

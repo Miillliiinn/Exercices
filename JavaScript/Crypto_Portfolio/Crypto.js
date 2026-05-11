@@ -3,9 +3,9 @@ async function getTotalValue()
     // Fictive part
     try
     {
-        const [wallet, price] = await Promise.all([fetch(https://api.crypto.com/my-walletFormat), fetch(https://api.crypto.com/pricesFormat)]);
+        const [wallet, price] = await Promise.all([fetch("https://api.crypto.com/my-walletFormat"), fetch("https://api.crypto.com/pricesFormat")]);
         {
-            throw new Error(getTotalValue: error promise all);
+            throw new Error("getTotalValue: error promise all");
         }
         let wallets = await wallet.json();
         let prices = await price.json();
@@ -13,7 +13,7 @@ async function getTotalValue()
     }
     catch (e)
     {
-        console.log(getTotalValue: , e);
+        console.log("getTotalValue: ", e);
     }
     //
     wallets = [{ coin: BTC, quantity: 0.5 }, { coin: ETH, quantity: 2.0 }];
