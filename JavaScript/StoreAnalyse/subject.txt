@@ -1,0 +1,19 @@
+L'énoncé : "Analyse des ventes d'un Store"
+Tu as une liste d'objets représentant des produits. Chaque produit a une catégorie, un prix et un stock.
+
+Objectif : En une seule chaîne de fonctions (enchaînement de méthodes), tu dois :
+
+Filtrer uniquement les produits qui sont en stock (stock > 0).
+
+Transformer ces produits pour appliquer une promotion de 20 % sur leur prix.
+
+Calculer la valeur totale de tout ce stock promotionné
+
+
+Les données :
+const inventory = [
+  { name: "iPhone 15", category: "Electronics", price: 1000, stock: 5 },
+  { name: "MacBook Air", category: "Electronics", price: 1500, stock: 0 },
+  { name: "Clavier", category: "Accessories", price: 100, stock: 10 },
+  { name: "Souris", category: "Accessories", price: 50, stock: 2 }
+];
