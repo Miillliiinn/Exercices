@@ -1,0 +1,23 @@
+Le "Nettoyeur" de Données (Data Parsing)
+On te donne un tableau d'objets représentant des transactions financières brutes reçues d'un partenaire.
+Certaines données sont corrompues ou incomplètes.
+Écris une fonction cleanTransactions(transactions) qui prend ce tableau en entrée et retourne un nouveau tableau, 
+contenant uniquement les transactions valides, triées de la plus récente à la plus ancienne.
+
+Une transaction est considérée comme valide si :
+
+Elle possède un id défini.
+
+Son amount (montant) est un nombre strictement supérieur à 0.
+
+Son currency (devise) est soit "EUR", soit "USD".
+
+Jeu de données pour tester :
+
+const rawTransactions = [
+  { id: "t1", amount: 150.50, currency: "EUR", date: "2026-05-20" },
+  { id: "t2", amount: "400", currency: "USD", date: "2026-05-22" }, // Attention: amount est une string !
+  { id: "t3", amount: -10, currency: "EUR", date: "2026-05-19" },  // Invalide: montant négatif
+  { id: "t4", amount: 89.99, currency: "GBP", date: "2026-05-21" }, // Invalide: mauvaise devise
+  { id: "t5", amount: 1200.00, currency: "EUR", date: "2026-05-29" }
+];

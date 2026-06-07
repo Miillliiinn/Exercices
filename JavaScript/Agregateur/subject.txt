@@ -1,0 +1,23 @@
+L'Agrégateur de Portefeuille (Algorithmie / Business Logic)
+Thème : Calculer des statistiques pour un tableau de bord client.
+
+Énoncé :
+Tu reçois le profil d'un utilisateur avec la liste de ses contrats d'assurance et d'investissement.
+Chaque contrat possède un type, un statut et un coût mensuel.
+Écris une fonction calculatePortfolioStats(user) qui retourne un objet contenant :
+
+Le montant total annuel (totalAnnualCost) que l'utilisateur dépense pour ses contrats actifs.
+
+Un tableau contenant uniquement les noms des contrats de type "investment".
+
+Jeu de données pour tester :
+
+const userProfile = {
+  name: "Thomas",
+  contracts: [
+    { name: "Assurance Habitation", type: "insurance", status: "active", monthlyCost: 25 },
+    { name: "Crypto Épargne", type: "investment", status: "active", monthlyCost: 100 },
+    { name: "Assurance Auto", type: "insurance", status: "canceled", monthlyCost: 45 },
+    { name: "Plan Épargne Retraite", type: "investment", status: "active", monthlyCost: 150 }
+  ]
+};
